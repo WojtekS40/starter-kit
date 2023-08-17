@@ -1,0 +1,52 @@
+<mvc:View xmlns:form="sap.ui.layout.form" controllerName="stk.starterkit.controller.CustomersList"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page" title="{i18n>title}">
+
+                    <content>
+
+                        <HBox id="_IDGenHBox1">
+                            <VBox id="_IDGenVBox1">
+                                <Carousel width="100%" id="_IDGenCarousel1" loop="true">
+                                    <Image id="_IDGenImage1" src="https://parkers-images.bauersecure.com/wp-images/21549/cut-out/420x280/volvo_850_saloon.jpg" />
+                                    <Image width="70%" height="70%" id="_IDGenImage2" src="https://cdn.vox-cdn.com/thumbor/cDOn401nXfBZhcVWHWfJnJv3e04=/11x0:516x284/1600x900/cdn.vox-cdn.com/uploads/chorus_image/image/39196188/Fish-Chocolate-Ad.0.JPG" />
+                                </Carousel>
+                            </VBox>
+                            <VBox id="_IDGenVBox2" justifyContent="Center">
+                                <Image id="_IDGenImage3" width="80%" height="100%" src="https://sap.github.io/ui5-tooling/v3/images/UI5_logo_wide.png" />
+                            </VBox>
+                        </HBox>
+
+                            <Button id="_IDGenButton1" text="Add new customer" class="sapUiMediumMarginBegin sapUiTinyMarginTopBottom" press="onCreateButtonPress"/>
+                            <Button id="_IDGenButton2" text="Employees actions" class="sapUiMediumMarginBegin sapUiTinyMarginTopBottom" press="onEmployeesActionsPress"/>
+
+                        <Table id="_IDGenTable1" class="blueText" items="{path: '/Customers', parameters:{select: 'CompanyName,Country, CustomerID'}}">
+                            <columns>
+                                <Column id="_IDGenColumn1">
+                                    <Label id="_IDGenLabel1" text="{i18n>CompanyName}" />
+                                </Column>
+                                <Column id="_IDGenColumn2">
+                                    <Label id="_IDGenLabel2" text="{i18n>country}" />
+                                </Column>
+                            </columns>
+                            <items>
+                                <ColumnListItem id="_IDGenColumnListItem1" type="Navigation" press="onCustomerPress">
+                                    <cells>
+                                        <Text id="_IDGenText1" text="{CompanyName}" />
+                                        <Text id="_IDGenText2" text="{Country}" />
+                                    </cells>
+                                </ColumnListItem>
+                            </items>
+                        </Table>
+
+                    </content>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>
+
+<!-- "pattern": ":?query:", -->

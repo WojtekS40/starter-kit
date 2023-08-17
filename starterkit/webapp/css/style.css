@@ -1,0 +1,9 @@
+/* Enter your custom styles here */
+.blueText tr:hover span{
+    color: #00f !important;
+}
+
+.zebra tr:nth-child(odd) {
+      background-color: rgba(228, 227, 227, 0.842);
+     }
+

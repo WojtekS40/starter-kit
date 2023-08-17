@@ -1,0 +1,37 @@
+<core:FragmentDefinition xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <Dialog id="contactDialog" title="{i18n>contactDetails}">
+
+        <endButton>
+            <Button id="_IDGenButton2" text="Close" press=".onCloseDialog" type="Negative" icon="sap-icon://decline" />
+
+        </endButton>
+
+        <VBox id = "vBox1">
+            <HBox id="hBox1">
+                <Label id="_IDGenLabel1" text ="Name:" />
+            </HBox>
+            <HBox id="hBox2" class= "sapUiSmallMarginBottom">
+                <Text id="_IDFormText1" text="{ContactName}"></Text>
+            </HBox>
+            <HBox id="hBox3">
+                <Label id="_IDGenLabel2" text ="Contact Title:" />
+            </HBox>
+            <HBox id="hBox4" class= "sapUiSmallMarginBottom">
+                <Text id="_IDFormText2" text="{ContactTitle}"></Text>
+            </HBox>
+            <HBox id="hBox5">
+                <Label id="_IDGenLabel3" text ="Address:" />
+            </HBox>
+            <HBox id="hBox6" class= "sapUiSmallMarginBottom">
+                <Text id="_IDFormText3" text="{Address}"></Text>
+            </HBox>
+            <HBox id="hBox7">
+                <Label id="_IDGenLabel4" text ="Phone:" />
+            </HBox>
+            <HBox id="hBox8" class= "sapUiSmallMarginBottom">
+                <Text id="_IDFormText4" text="{Phone}"></Text>
+            </HBox>
+        </VBox>
+    </Dialog>
+</core:FragmentDefinition >

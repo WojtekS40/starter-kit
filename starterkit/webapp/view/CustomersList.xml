@@ -1,0 +1,17 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    controllerName="stk.starterkit.controller.CustomersList"
+    displayBlock="true"
+>
+    <Page
+        xmlns:cd="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+        id="CustomersList"
+        showNavButton="true"
+        navButtonPress="handleNavButtonPress"
+        title="CustomersList"
+    />
+
+
+    
+</mvc:View>
